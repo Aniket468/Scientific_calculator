@@ -892,42 +892,42 @@ public class Calci extends javax.swing.JFrame {
 
     private void bplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bplusActionPerformed
         // TODO add your handling code here:
-        p=0;
-        enternumber=display.getText();
-        enternumber1=display2.getText();
-        op='+';
-        if(enternumber==""&&enternumber1=="")
-        {
-            display2.setText("0"+"+");
-            num1=0;
-        }
-        else if(display.getText()!="")
-        {
-            
-            num1=Double.parseDouble(enternumber);
-            num2=num1+num2;
-        display2.setText(enternumber1+enternumber+"+");
-       display.setText("");
-        }
-          else
-        {
-         String s;
-        int k;
-        k=enternumber1.length();
-        s=enternumber1.substring(0,k-1);
-        char []ch=enternumber1.toCharArray();
-         if(ch[k-1]=='(')
-         display2.setText(enternumber1);
-         else if(ch[k-1]==')'||ch[k-2]=='(')
-        {
-        display2.setText(enternumber1+"+");
-        }
-         else 
-        {
-        display2.setText(s+"+");
-        }
-        
-        }
+            p=0;
+            enternumber=display.getText();
+            enternumber1=display2.getText();
+            op='+';
+            if(enternumber==""&&enternumber1=="")
+            {
+                display2.setText("0"+"+");
+                num1=0;
+            }
+            else if(display.getText()!="")
+            {
+
+                num1=Double.parseDouble(enternumber);
+                num2=num1+num2;
+            display2.setText(enternumber1+enternumber+"+");
+           display.setText("");
+            }
+              else
+            {
+             String s;
+            int k;
+            k=enternumber1.length();
+            s=enternumber1.substring(0,k-1);
+            char []ch=enternumber1.toCharArray();
+             if(ch[k-1]=='(')
+             display2.setText(enternumber1);
+             else if(ch[k-1]==')'||ch[k-2]=='(')
+            {
+            display2.setText(enternumber1+"+");
+            }
+             else 
+            {
+            display2.setText(s+"+");
+            }
+
+            }
     }//GEN-LAST:event_bplusActionPerformed
 
     private void bminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bminusActionPerformed
